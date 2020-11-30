@@ -9,7 +9,7 @@
     "clean-orig": "rm -rf www/ || true",
     "clean": "rmdir /s /q www",
     "build-orig": "npm run clean && tsc && cp package.json www/package.json && mkdir www/tmp/ && cd www && zip -r Archive.zip . && cd ..",
-    "build": "npm run clean && tsc && copy package.json www/package.json && mkdir www/tmp/ && cd www && 7z a -r Archive.zip . && cd ..",
+    "build": "npm run clean && tsc && cp package.json www/package.json && mkdir www/tmp/ && cd www && 7z a -r Archive.zip . && cd ..",
     "dev": "ts-node-dev --respawn --transpileOnly ./src/server.ts"
   },
   "repository": {
